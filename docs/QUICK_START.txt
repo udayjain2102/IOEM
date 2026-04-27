@@ -1,0 +1,143 @@
+╔════════════════════════════════════════════════════════════════════╗
+║   BASELINE HANDOFF SIMULATION — QUICK START GUIDE                 ║
+║   (With Dataset Integration)                                      ║
+╚════════════════════════════════════════════════════════════════════╝
+
+✅ INTEGRATION STATUS: COMPLETE
+
+3 CSV Datasets → 3 New Figures → Dataset Validation → ISO Compliance Check
+───────────────────────────────────────────────────────────────────────
+
+🚀 HOW TO RUN
+
+  MATLAB:
+    >> cd('simulations'); run('baseline_handoff_simulation.m')
+  
+  Octave:
+    $ cd simulations && octave baseline_handoff_simulation.m
+  
+  Terminal:
+    $ cd /Users/adijain/ENGINEERING/IEOM/simulations
+    $ matlab -batch "baseline_handoff_simulation"
+
+📊 WHAT YOU GET
+
+  Console Output:
+    ✓ Dataset loading confirmation
+    ✓ ISO/TS 15066 compliance table
+    ✓ 3 scenario results (Safe vs Unsafe)
+    ✓ Research paper citations
+    ✓ Safety standards overview
+
+  7 Visualizations:
+    1. Position Trajectories (3 scenarios)
+    2. Separation Distance vs Time
+    3. Summary Metrics (Min sep & time)
+    4. Phase Portrait (Speed sweep)
+    5. ISO Safety Limits by Body Region ← NEW
+    6. HRC Dataset Overview ← UPDATED
+    7. Dataset Validation Analysis ← NEW
+
+📈 KEY FINDINGS
+
+  Scenario | Speed  | ISO Compliant?
+  ─────────────────────────────────
+  Slow     | 0.4 m/s| ✓ YES
+  Moderate | 0.9 m/s| ✓ YES
+  Aggressive| 1.8 m/s| ✗ NO (unsafe!)
+
+  → Aggressive scenario exceeds 1.0 m/s hand contact limit
+
+📋 INTEGRATED DATASETS
+
+  iso_safety_limits.csv
+    • 15 body regions (force/speed limits)
+    • ISO/TS 15066:2016 standard
+    • Hand limit: 1.0 m/s max speed
+
+  hrc_datasets.csv
+    • 14 research benchmark datasets
+    • TU Munich, MIT, Zenodo, arXiv
+    • 14/14 currently accessible online (100% reachability)
+
+  hrc_papers.csv
+    • 39 research papers
+    • Human-robot handover, safety
+    • 2013-2026 publications
+
+📁 PROJECT STRUCTURE
+
+  📂 simulations/
+    • baseline_handoff_simulation.m ← UPDATED
+    • baseline_handoff_simulation_octave.m
+    • matlab_verify_three_scenarios.m
+    • matlab_cli_debug_smoke.m
+
+  📂 data/
+    • hrc_datasets.csv
+    • hrc_papers.csv
+    • iso_safety_limits.csv
+
+  📂 docs/
+    • README_DATASETS.md
+    • DATASET_INTEGRATION_GUIDE.md
+    • INTEGRATION_SUMMARY.txt
+    • QUICK_START.txt (this file)
+    • HRC_SIMULATION_INTEGRATION_SUMMARY.md
+
+  📂 outputs/figures/
+    • figure1_trajectories.png
+    • figure2_separation.png
+    • figure3_metrics.png
+    • figure4_phase_portrait.png
+    • figure5_iso_limits.png
+    • figure6_datasets.png
+    • figure7_dataset_validation_octave.png
+
+  📂 scripts/
+    • hrc_data_scraper.py
+    • hrc_data_scraper_v2.py
+    • phase3_verify_outputs.py
+    • temp.py
+
+💡 KEY INSIGHTS
+
+  1. Slow & Moderate scenarios are SAFE per ISO standards
+  2. Aggressive scenario violates hand contact speed limit
+  3. Needs adaptive speed control for high-performance tasks
+  4. 14 real HRC datasets available for validation (100% reachable)
+  5. 39 research papers support analysis
+  6. Dataset validation framework enables comprehensive safety analysis
+
+🔗 RELATED FILES
+
+  • DATASET_INTEGRATION_GUIDE.md — Full technical details
+  • INTEGRATION_SUMMARY.txt — Feature overview
+  • README_DATASETS.md — Comprehensive guide
+
+⚙️ REQUIREMENTS
+
+  • MATLAB R2018b+ or GNU Octave 5.0+
+  • readtable() function support
+  • Graphics display
+  • 3 CSV files in same directory
+
+✨ WHAT'S NEW
+
+  + Data loading on startup
+  + ISO compliance validation
+  + 3 new visualization figures
+  + Dataset references in output
+  + Safety standards checking
+  + Compliance flags (✓/✗)
+  + Dataset validation framework
+  + 14 datasets (100% reachable)
+  + Enhanced safety analysis
+
+═════════════════════════════════════════════════════════════════════
+
+Next: Run the simulation and check the output!
+
+Status: ✅ Ready to use
+Last Updated: 2026-04-27
+
